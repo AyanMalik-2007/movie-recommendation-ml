@@ -1,4 +1,4 @@
-```markdown
+
 # Movie Recommendation ML
 
 A **user-based collaborative filtering movie recommendation system** built with Python and machine learning.
@@ -9,8 +9,8 @@ This project implements a movie recommendation system using user-based collabora
 
 ## Project Structure
 
-```
 
+```markdown
 movie-recommendation-ml/
 ├── data/              # CSV files: ratings.csv, movies.csv
 ├── model/             # Trained models saved here
