@@ -25,7 +25,7 @@ def train():
         names=["userId", "movieId", "rating", "timestamp"]
     )
     ratings = ratings.drop("timestamp", axis=1)
-    print("✅ Ratings loaded successfully:")
+    print(" Ratings loaded successfully:")
     print(ratings.head())
 
     # --- 2. User-Item матрица ---
@@ -41,7 +41,7 @@ def train():
     # --- 4. Сохраняем модели ---
     joblib.dump(user_item_matrix, MODEL_DIR / "user_item_matrix.pkl")
     joblib.dump(similarity, MODEL_DIR / "user_similarity.pkl")
-    print(f"\n✅ Model trained and saved successfully in '{MODEL_DIR}'")
+    print(f"\n Model trained and saved successfully in '{MODEL_DIR}'")
 
 if __name__ == "__main__":
     train()
